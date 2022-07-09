@@ -5,15 +5,17 @@ public class MethodExample {
                System.out.println(playerName +" manage to get the position "+position+" on the high score table");
         }
     public int calculateHighScore(int score) {
+            int pos;
             if (score >= 1000) {
-                return 1;
+                pos=1;
             } else if (score >= 500) {
-                return 2;
+                pos=2;
             } else if (score >= 100) {
-                return 3;
+                pos= 3;
             } else {
-                return 4;
+                pos= 4;
             }
+            return pos;
         }
     public static void main(String[] args) {
             MethodExample methodExample = new MethodExample();
